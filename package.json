@@ -1,0 +1,40 @@
+{
+  "name": "ceos-service-sls-template",
+  "version": "1.0.0",
+  "description": "test covered serverless template with CI/CD and MongoDB connection to make easier and faster to develop a serveless app",
+  "main": "index.js",
+  "repository": "git@github.com:manfioLP/ceos-service-sls-template.git",
+  "author": "Leopoldo Manfio <manfio.leopoldo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manfioLP/ceos-server/issues"
+  },
+  "homepage": "https://github.com/manfioLP/ceos-server#readme",
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "coverageReporters": [
+    "json",
+    "lcov",
+    "html",
+    "text"
+  ],
+  "coverageThreshold": {
+    "./db/index.js": {
+      "branches": 0,
+      "statements": 0
+    }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "serverless-offline": "^6.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.18",
+    "path": "^0.12.7",
+    "promisify": "0.0.3"
+  }
+}
